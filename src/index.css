@@ -17,10 +17,17 @@ body {
   color: #222;
 }
 
+.title { 
+  display: block;
+  margin: 2rem auto 4rem auto;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
 .booklist {
   width: 90vw;
   max-width: 1170px;
-  margin: 5rem auto;
+  margin: 3rem auto;
   display: grid;
   gap: 2rem;
 }
@@ -28,6 +35,12 @@ body {
 @media screen and (min-width: 768px) {
   .booklist {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .title {
+    font-size: 3rem;
+    margin: 5rem auto;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
   }
 }
 

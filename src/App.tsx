@@ -1,5 +1,6 @@
 import { Book } from "./Book";
 import books from "./books";
+import Title from "./Title";
 
 function App() {
   return (
@@ -17,10 +18,13 @@ function BookList() {
     console.log(book);
   };
   return (
-    <section className="booklist">
-      {books.map((book, idx) => (
-        <Book {...book} key={book.id} getBook={getBook} num={idx + 1} />
-      ))}
-    </section>
+    <>
+      <Title />
+      <section className="booklist">
+        {books.map((book, idx) => (
+          <Book {...book} key={book.id} getBook={getBook} num={idx + 1} />
+        ))}
+      </section>
+    </>
   );
 }

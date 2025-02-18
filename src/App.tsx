@@ -61,10 +61,14 @@ const books = [
   },
 ];
 function BookList() {
+  const getBook = function (id: number) {
+    const book = books.find((book) => book.id === id);
+    console.log(book);
+  };
   return (
     <section className="booklist">
       {books.map((book) => (
-        <Book {...book} key={book.id} />
+        <Book {...book} key={book.id} getBook={getBook} />
       ))}
     </section>
   );
@@ -74,11 +78,13 @@ type BookProps = {
   title: string;
   author: string;
   image: string;
+  id: number;
+  getBook: (id: number) => void;
 };
 
-function Book({ author, image, title }: BookProps) {
+function Book({ author, image, title, getBook, id }: BookProps) {
   return (
-    <article className="book">
+    <article className="book" onClick={() => getBook(id)}>
       <img src={image} alt={title} />
       <h1>{title}</h1>
       <h2>{author}</h2>

@@ -1,22 +1,24 @@
+import img1 from "./assets/images/book-1.jpg";
+import img2 from "./assets/images/book-2.jpg";
+import img3 from "./assets/images/book-3.jpg";
+
 const books = [
   {
     title: "The Let Them Theory",
     author: "Mel Robbins",
-    image: "./images/book-1.jpg",
+    image: img1,
     id: 1,
   },
   {
     title: "Lorne: The Man Who Invented Saturday Night Live",
     author: "Susan Marison",
-    image:
-      "https://images-na.ssl-images-amazon.com/images/I/81fIKUQ6lyL._AC_UL600_SR600,400_.jpg",
+    image: img2,
     id: 2,
   },
   {
     title: "Iron Flame",
     author: "Rebecca Yarros",
-    image:
-      "https://images-na.ssl-images-amazon.com/images/I/91ke43dIxkL._AC_UL600_SR600,400_.jpg",
+    image: img3,
     id: 3,
   },
   {
@@ -50,6 +52,5 @@ const books = [
     id: 7,
   },
 ];
-
 
 export default books;

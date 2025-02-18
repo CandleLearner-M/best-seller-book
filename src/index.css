@@ -36,6 +36,18 @@ body {
   padding: 2rem;
   border-radius: 1rem;
   text-align: center;
+  position: relative;
+}
+
+.book .rank {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  border-radius: 1rem 0 1rem 0;
+  padding: 0.75rem;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .book img {
